@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+
+# Build output (Parcel build folder)
+dist/
+
+# Log files
+*.log
+
+# OS-generated files (macOS, Windows, etc.)
+.DS_Store
+Thumbs.db
+
+# Parcel cache
+.cache/
+
+# IDE configurations (if you're using a code editor like VSCode)
+.vscode/
+
+# Environment variables file (if you have any, like .env files)
+.env

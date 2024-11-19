@@ -1,0 +1,65 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>User Management Dashboard</h1>
+      <!-- Error Message Section -->
+      <div
+        id="error-message"
+        style="color: red; display: none; margin-bottom: 20px"
+      ></div>
+
+      <div id="user-list-section">
+        <button id="add-user-btn">+ Add User</button>
+        <div id="user-list"></div>
+      </div>
+
+      <div id="form-section">
+        <h2 id="form-title">Add/Edit User</h2>
+        <form id="user-form">
+          <input type="hidden" id="user-id" />
+          <label for="first-name">First Name:</label>
+          <input
+            type="text"
+            id="first-name"
+            placeholder="Enter First Name"
+            required
+          />
+          <label for="last-name">Last Name:</label>
+          <input
+            type="text"
+            id="last-name"
+            placeholder="Enter Last Name"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Email Address"
+            required
+          />
+          <label for="department">Department:</label>
+          <input
+            type="text"
+            id="department"
+            placeholder="Enter Department"
+            required
+          />
+          <button type="submit">Save</button>
+          <button type="button" id="cancel-btn">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Include the compiled JavaScript file -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
